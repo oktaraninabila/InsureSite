@@ -1,0 +1,238 @@
+
+  @media (max-width: 1200px) {
+    .container {
+      .header {
+        padding: 25px;
+  
+        &__hamburger-toggle {
+          display: block;
+        }
+  
+        &__nav {
+          display: none;
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          left: 0;
+          top: 4.9rem;
+          background: $very-dark-violet url(https://res.cloudinary.com/dxayftnxb/image/upload/v1581474361/bg-pattern-mobile-nav_crlgld.svg);
+          background-repeat: no-repeat;
+          background-position-x: right;
+          background-position-y: 91.1%;
+          background-size: 100% 218px;
+          animation: navOpen 2s ease-in;
+          
+          
+          @keyframes navOpen {
+    from {
+      height: 0;
+    }
+  
+    to {
+      height: 100vh;
+    }
+  }
+  
+          &__items {
+            flex-direction: column;
+  
+            li {
+              text-align: center;
+              padding: 25px 15px;
+  
+              a {
+                color: $very-light-gray;
+              }
+  
+              .active {
+                margin: 20px auto 0;
+                padding: 15px 15px;
+                border: 0.125rem solid $very-light-gray;
+                color: $very-light-gray;
+              }
+            }
+          }
+        }
+      }
+  
+      .main {
+        &__intro {
+          flex-direction: column-reverse;
+          padding: 0;
+  
+          .desktop-left-decor-pattern,
+          .desktop-right-decor-pattern {
+            display: none;
+          }
+  
+          .mobile-left-decor-pattern,
+          .mobile-right-decor-pattern {
+            display: block;
+          }
+  
+          .mobile-left-decor-pattern {
+            position: absolute;
+            left: -0.3125rem;
+            top: 64rem;
+          }
+  
+          .mobile-right-decor-pattern {
+            position: absolute;
+            top: 82rem;
+            right: 0.0625rem;
+          }
+  
+          .intro-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 92px;
+  
+            .hr {
+              display: none;
+            }
+  
+            h1 {
+              text-align: center;
+              font-size: 2.5rem;
+              line-height: normal;
+              padding: 30px;
+            }
+  
+            p {
+              margin-bottom: 33px;
+              width: 300px;
+              margin-top: 0;
+              color: rgb(206, 206, 206);
+              line-height: 1.3;
+              letter-spacing: 1px;
+              text-align: center;
+              font-size: 0.9rem;
+            }
+          }
+  
+          .intro-img-mobile {
+            display: block;
+  
+            img {
+              object-fit: cover;
+              width: 100vw;
+              height: 100vh;
+            }
+          }
+  
+          .intro-img-desktop {
+            display: none;
+          }
+        }
+  
+        &__about {
+          padding: 141px 33px 0;
+  
+          .hr {
+            margin: 0 auto 30px;
+          }
+  
+          h2 {
+            font-size: 2.9rem;
+            line-height: normal;
+            text-align: center;
+          }
+  
+          .about-services {
+            flex-direction: column;
+            align-items: center;
+  
+            div {
+              text-align: center;
+  
+              img {
+                margin: 59px auto 36px;
+              }
+  
+              h3 {
+                font-size: 2rem;
+                line-height: normal;
+                text-align: center;
+              }
+  
+              p {
+                line-height: 1.5;
+                text-align: center;
+              }
+            }
+          }
+        }
+  
+        &__more {
+          padding: 100px 24px 0;
+  
+          .more-content {
+            padding: 74px 40px 68px;
+            display: block;
+            background-image: url(https://res.cloudinary.com/dxayftnxb/image/upload/v1581474408/bg-pattern-how-we-work-mobile_yjc1re.svg);
+            background-repeat: no-repeat;
+            background-position: top right;
+  
+            h2 {
+              padding: 0;
+              font-size: 2.4rem;
+              text-align: center;
+            }
+  
+            .more-link {
+              display: block;
+              margin-top: 18px;
+              left: 0;
+            }
+  
+            .more-desktop-img {
+              display: none;
+            }
+          }
+        }
+      }
+  
+      .footer {
+        &__content {
+          padding: 100px 24px 85px;
+          background-image: url(https://res.cloudinary.com/dxayftnxb/image/upload/v1581474453/bg-pattern-footer-mobile_shrodh.svg);
+          background-repeat: no-repeat;
+          background-position: top left;
+  
+          .links {
+            flex-direction: column;
+            align-items: center;
+  
+            a {
+              margin: 0 15px 0;
+            }
+  
+            .social-links {
+              margin-top: 23px;
+            }
+          }
+  
+          .useful-links {
+            flex-direction: column;
+            align-items: center;
+  
+            div {
+              align-items: center;
+              justify-content: center;
+  
+              h4 {
+                margin-bottom: 26px;
+                margin-top: 21px;
+              }
+            }
+          }
+        }
+  
+        .attribution {
+          margin-top: 0;
+        }
+      }
+    }
+  }
